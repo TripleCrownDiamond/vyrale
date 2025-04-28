@@ -154,12 +154,6 @@ docs: Update API usage guide
 
 ---
 
-# ✅ End of Technical Documentation
-
----
-
-[← Back to Project Hub](virtual-cm-project-hub.md#L50-57)
-
 - **Discord / WhatsApp Communication**
 
 ---
@@ -172,3 +166,9 @@ docs: Update API usage guide
   ```javascript
   // TODO: Refactor this logic to use the new utility function (User - YYYY-MM-DD)
   ```
+
+# ✅ End of Technical Documentation
+
+---
+
+[← Back to Project Hub](virtual-cm-project-hub.md#L50-57)
