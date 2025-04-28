@@ -4,17 +4,18 @@
 
 ## 🔧 Tech Stack Overview (Open Source First)
 
-| Layer | Technology |
-|:---|:---|
-| **Frontend** | Next.js 14 + TailwindCSS + Shadcn/UI |
-| **Backend** | Supabase (Database, API, Auth, Storage) |
-| **Authentication** | Clerk.dev initially ➔ plan to migrate to an Open Source alternative (e.g., Lucia, NextAuth.js, Supabase Auth) |
-| **AI Content Generation** | Open Source LLMs (LLaMA, Mistral, Dolphin, etc.) + optional fallback to OpenAI |
-| **Automation** | n8n.io + Trae AI IDE agents and flows |
-| **Payments** | Flutterwave, KKiaPay, Qosic, Crypto (Polygon/Matic/USDC) |
-| **Deployment** | Vercel (could migrate to Railway or self-hosted if necessary) |
+| Layer                     | Technology                                                                                                    |
+| :------------------------ | :------------------------------------------------------------------------------------------------------------ |
+| **Frontend**              | Next.js 14 + TailwindCSS + Shadcn/UI                                                                          |
+| **Backend**               | Supabase (Database, API, Auth, Storage)                                                                       |
+| **Authentication**        | Clerk.dev initially ➔ plan to migrate to an Open Source alternative (e.g., Lucia, NextAuth.js, Supabase Auth) |
+| **AI Content Generation** | Open Source LLMs (LLaMA, Mistral, Dolphin, etc.) + optional fallback to OpenAI                                |
+| **Automation**            | n8n.io + Trae AI IDE agents and flows                                                                         |
+| **Payments**              | Flutterwave, KKiaPay, Qosic, Crypto (Polygon/Matic/USDC)                                                      |
+| **Deployment**            | Vercel (could migrate to Railway or self-hosted if necessary)                                                 |
 
 **Note:**
+
 - All technologies are selected with a **free-tier/open-source first** logic.
 - Future migrations toward more independent, scalable hosting are anticipated.
 
@@ -29,6 +30,7 @@
 - **State Management**: Built-in React Context or lightweight libraries (Zustand if necessary)
 
 **Structure Example:**
+
 ```plaintext
 /app
   /dashboard
@@ -52,6 +54,7 @@
 - **CRON Jobs**: Supabase scheduled functions or Vercel CRON triggers
 
 **Main Tables:**
+
 - `users`
 - `profiles`
 - `posts`
@@ -62,17 +65,19 @@
 
 ## 🧠 AI Integration
 
-| Task | Technology |
-|:---|:---|
-| Text generation | Open Source LLMs (LLaMA 3, Mistral 7B, Dolphin, etc.) |
+| Task             | Technology                                                    |
+| :--------------- | :------------------------------------------------------------ |
+| Text generation  | Open Source LLMs (LLaMA 3, Mistral 7B, Dolphin, etc.)         |
 | Image generation | Stable Diffusion (SDXL, 1.5) via HuggingFace or Replicate API |
-| Automation | n8n.io workflows, Trae AI IDE agents |
+| Automation       | n8n.io workflows, Trae AI IDE agents                          |
 
 **Strategy:**
+
 - Use open models locally or via free hosting (Replicate/HuggingFace)
 - Only fallback to commercial APIs (OpenAI, Anthropic) if absolutely necessary
 
 **Extended AI Content Management:**
+
 - Images generated must be **editable** via an internal **editor**: change fonts, font sizes, reposition logos, edit text overlays.
 - A custom lightweight **AI-powered editor** (similar to Canva) will be developed for visual post editing.
 - Future scaling will allow editing of **generated videos** similarly.
@@ -92,12 +97,12 @@
 
 ## 💳 Payments System
 
-| Provider | Purpose |
-|:---|:---|
-| Flutterwave | Card and Mobile Money payments |
-| KKiaPay | Alternative Mobile Money platform |
-| Qosic Pay | Micro-transactions and Mobile Money |
-| Crypto | Accept MATIC, USDC on Polygon network |
+| Provider    | Purpose                               |
+| :---------- | :------------------------------------ |
+| Flutterwave | Card and Mobile Money payments        |
+| KKiaPay     | Alternative Mobile Money platform     |
+| Qosic Pay   | Micro-transactions and Mobile Money   |
+| Crypto      | Accept MATIC, USDC on Polygon network |
 
 **Future proof**: Modular payment provider integration (easily switch or add new providers)
 
@@ -105,14 +110,15 @@
 
 ## 📚 Git Workflow Standards
 
-| Type | Branch naming |
-|:---|:---|
-| Production | `main` |
-| Development | `develop` |
-| Features | `feature/feature-name` |
-| Bugfixes | `bugfix/bug-name` |
+| Type        | Branch naming          |
+| :---------- | :--------------------- |
+| Production  | `main`                 |
+| Development | `develop`              |
+| Features    | `feature/feature-name` |
+| Bugfixes    | `bugfix/bug-name`      |
 
 **Commit Message Format (Conventional Commits)**:
+
 ```bash
 feat: Add user profile creation
 fix: Resolve auth error on login page
@@ -121,6 +127,7 @@ docs: Update API usage guide
 ```
 
 **Rules:**
+
 - 1 Pull Request (PR) per feature.
 - No direct commits to `main` or `develop`.
 - PR reviews are mandatory.
@@ -148,3 +155,5 @@ docs: Update API usage guide
 # ✅ End of Technical Documentation
 
 ---
+
+[← Back to Project Hub](virtual-cm-project-hub.md#L50-57)
