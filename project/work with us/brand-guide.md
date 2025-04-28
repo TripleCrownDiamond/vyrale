@@ -38,7 +38,14 @@ Our logo consists of the vyrale wordmark and the lightning bolt icon.
 - **Black:** `#000000` (Text, secondary elements)
 - **Grays:** (Use varying shades for backgrounds, borders, disabled states - specific shades TBD)
 
-**Accent Colors:** (To be defined - consider complementary or analogous colors for secondary actions, alerts, etc.)
+**Accent Color:**
+
+- **vyrale Blue:** `#007BFF` (Used for secondary actions, informational highlights)
+
+**Interaction Shades:**
+
+- **Primary Darker:** `#CC2564` (Used for hover/active states on primary elements)
+- **Accent Darker:** `#0056B3` (Used for hover/active states on accent elements)
 
 ---
 

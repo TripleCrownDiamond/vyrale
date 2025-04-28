@@ -17,9 +17,15 @@ Our color palette is designed to be vibrant, accessible, and aligned with the vy
 - **Primary (Pink):** `#FF2E7D`
   - _Usage:_ Main calls-to-action, branding highlights, key interactive elements.
   - _Tailwind Variable:_ `primary`
-- **Accent (Blue):** `#4A90E2` (Example - Replace with actual accent from Brand Guide if available)
+- **Accent (Blue):** `#007BFF`
   - _Usage:_ Secondary actions, informational highlights, decorative elements.
   - _Tailwind Variable:_ `accent`
+- **Primary Darker:** `#CC2564`
+  - _Usage:_ Hover/active states for primary elements.
+  - _Tailwind Variable:_ `primary-darker`
+- **Accent Darker:** `#0056B3`
+  - _Usage:_ Hover/active states for accent elements.
+  - _Tailwind Variable:_ `accent-darker`
 
 **Neutral Colors:**
 
@@ -57,10 +63,11 @@ Our color palette is designed to be vibrant, accessible, and aligned with the vy
 **Usage Rules:**
 
 1.  **Primary First:** Use the primary color (`#FF2E7D`) for the most important actions and brand elements.
-2.  **Accent Sparingly:** Use the accent color to draw attention to secondary elements or add visual interest without overpowering the primary color.
+2.  **Accent Sparingly:** Use the accent color (`#007BFF`) to draw attention to secondary elements or add visual interest without overpowering the primary color.
 3.  **Neutrals for Foundation:** Rely on neutrals for backgrounds, text, and structural elements to ensure readability and a clean layout.
 4.  **Semantic Colors for State:** Use semantic colors consistently to communicate status (success, warning, error, info).
-5.  **Accessibility:** Ensure sufficient contrast ratios between text and background colors, especially when using primary and accent colors. Use tools to check contrast.
+5.  **Interaction States:** Use `primary-darker` (`#CC2564`) and `accent-darker` (`#0056B3`) for hover, active, or focus states on elements using the respective base colors.
+6.  **Accessibility:** Ensure sufficient contrast ratios between text and background colors, especially when using primary and accent colors. Use tools to check contrast.
 
 **Tailwind CSS Configuration Example (`tailwind.config.js`):**
 
@@ -71,7 +78,9 @@ module.exports = {
     extend: {
       colors: {
         primary: "#FF2E7D",
-        accent: "#4A90E2", // Replace with actual accent
+        "primary-darker": "#CC2564",
+        accent: "#007BFF",
+        "accent-darker": "#0056B3",
         "gray-light": "#F5F5F5",
         "gray-medium": "#CCCCCC",
         "gray-dark": "#333333",
@@ -93,8 +102,23 @@ When using Shadcn/UI, configure the theme (often in `globals.css` or a dedicated
 ```css
 /* Example in globals.css */
 :root {
-  --primary: 255 46 125; /* HSL or RGB values for Shadcn */
+  --primary: 255 46 125; /* HSL or RGB values for Shadcn - #FF2E7D */
+  --primary-foreground: 255 255 255; /* Text on primary - Assuming white */
+  --primary-darker: 204 37 100; /* HSL or RGB for #CC2564 */
+
+  --accent: 0 123 255; /* HSL or RGB for #007BFF */
+  --accent-foreground: 255 255 255; /* Text on accent - Assuming white */
+  --accent-darker: 0 86 179; /* HSL or RGB for #0056B3 */
+
   /* ... other theme variables ... */
+
+  /* Example Usage for Hover/Focus on Shadcn Button */
+  .button-primary:hover {
+    background-color: hsl(var(--primary-darker));
+  }
+  .button-accent:hover {
+    background-color: hsl(var(--accent-darker));
+  }
 }
 ```
 
