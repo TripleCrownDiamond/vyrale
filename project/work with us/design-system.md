@@ -10,16 +10,93 @@ Built With: Next.js 14, TailwindCSS, Shadcn/UI
 
 ### 1. Color Palette
 
-Refer to the [vyrale Brand Guide](brand-guide.md) for the official color palette.
+Our color palette is designed to be vibrant, accessible, and aligned with the vyrale brand identity. Refer to the [vyrale Brand Guide](brand-guide.md) for the full official palette.
 
-- **Primary:** `#FF2E7D` (vyrale Pink)
-- **Neutrals:** White, Black, Grays (See Brand Guide)
-- **Accents:** (See Brand Guide)
+**Core Colors:**
 
-**Usage in Tailwind/Shadcn:**
+- **Primary (Pink):** `#FF2E7D`
+  - _Usage:_ Main calls-to-action, branding highlights, key interactive elements.
+  - _Tailwind Variable:_ `primary`
+- **Accent (Blue):** `#4A90E2` (Example - Replace with actual accent from Brand Guide if available)
+  - _Usage:_ Secondary actions, informational highlights, decorative elements.
+  - _Tailwind Variable:_ `accent`
 
-- Configure `tailwind.config.js` to include these colors.
-- Leverage Shadcn/UI's theming capabilities, setting vyrale Pink as the primary theme color. Check `globals.css` or the theme configuration file.
+**Neutral Colors:**
+
+- **White:** `#FFFFFF`
+  - _Usage:_ Backgrounds, text on dark backgrounds.
+  - _Tailwind Variable:_ `white`
+- **Black:** `#000000`
+  - _Usage:_ Text, dark backgrounds, high contrast elements.
+  - _Tailwind Variable:_ `black`
+- **Gray (Light):** `#F5F5F5`
+  - _Usage:_ Subtle backgrounds, dividers, disabled states.
+  - _Tailwind Variable:_ `gray-light`
+- **Gray (Medium):** `#CCCCCC`
+  - _Usage:_ Borders, secondary text, icons.
+  - _Tailwind Variable:_ `gray-medium`
+- **Gray (Dark):** `#333333`
+  - _Usage:_ Body text on light backgrounds, headings.
+  - _Tailwind Variable:_ `gray-dark`
+
+**Semantic Colors:**
+
+- **Success:** `#28A745`
+  - _Usage:_ Confirmation messages, positive indicators.
+  - _Tailwind Variable:_ `success`
+- **Warning:** `#FFC107`
+  - _Usage:_ Alerts, cautionary messages.
+  - _Tailwind Variable:_ `warning`
+- **Error:** `#DC3545`
+  - _Usage:_ Error messages, critical alerts.
+  - _Tailwind Variable:_ `error`
+- **Info:** `#17A2B8`
+  - _Usage:_ Informational messages, tips.
+  - _Tailwind Variable:_ `info`
+
+**Usage Rules:**
+
+1.  **Primary First:** Use the primary color (`#FF2E7D`) for the most important actions and brand elements.
+2.  **Accent Sparingly:** Use the accent color to draw attention to secondary elements or add visual interest without overpowering the primary color.
+3.  **Neutrals for Foundation:** Rely on neutrals for backgrounds, text, and structural elements to ensure readability and a clean layout.
+4.  **Semantic Colors for State:** Use semantic colors consistently to communicate status (success, warning, error, info).
+5.  **Accessibility:** Ensure sufficient contrast ratios between text and background colors, especially when using primary and accent colors. Use tools to check contrast.
+
+**Tailwind CSS Configuration Example (`tailwind.config.js`):**
+
+```javascript
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#FF2E7D",
+        accent: "#4A90E2", // Replace with actual accent
+        "gray-light": "#F5F5F5",
+        "gray-medium": "#CCCCCC",
+        "gray-dark": "#333333",
+        success: "#28A745",
+        warning: "#FFC107",
+        error: "#DC3545",
+        info: "#17A2B8",
+      },
+    },
+  },
+  plugins: [],
+};
+```
+
+**Shadcn/UI Theming:**
+
+When using Shadcn/UI, configure the theme (often in `globals.css` or a dedicated theme file) to use these variables. Set `--primary` to `#FF2E7D`.
+
+```css
+/* Example in globals.css */
+:root {
+  --primary: 255 46 125; /* HSL or RGB values for Shadcn */
+  /* ... other theme variables ... */
+}
+```
 
 ### 2. Typography
 
