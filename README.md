@@ -1,16 +1,29 @@
-# 🧙 Virtual CM – Project Hub (For Developers)
+# 🌟 Virtual CM - Your AI-Powered Social Media Manager
 
-## 🌟 Project Overview
+Virtual Community Manager (Virtual CM) is a next-generation AI-powered platform that makes social media management effortless and effective.
 
-**Virtual Community Manager (Virtual CM)** is a next-generation AI-powered SaaS platform that automates and optimizes social media management for:
+## ✨ What We Offer
+
+- **Smart Content Creation**: AI-powered posts that match your brand's voice
+- **Automated Scheduling**: Set it and forget it - we'll post at the perfect times
+- **Multi-Platform Support**: Manage Facebook, Instagram, and more from one place
+- **Visual Editor**: Create and edit stunning visuals with our Canva-like editor
+- **Smart Analytics**: Track your growth and engagement in real-time
+
+## 💡 Perfect For
 
 - Small and Medium-Sized Businesses (SMBs)
-- Entrepreneurs  
+- Entrepreneurs
 - Content Creators
 - Artists
 - NGOs
 - Community Projects
 
-Built to be **scalable and international**, Virtual CM helps users **create**, **schedule**, **publish**, and **interact** on social media automatically, using powerful AI and workflow automations.
+## 💳 Flexible Payments
 
-For detailed developer documentation, see [Virtual CM Project Hub](project/virtual-cm-project-hub.md)
+- Mobile Money (Africa)
+- Card Payments
+- Crypto (USDC, MATIC)
+- International Payment Gateways
+
+[For Developers & Contributors →](project/technical-documentation.md)
