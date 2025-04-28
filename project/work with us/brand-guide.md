@@ -1,12 +1,12 @@
-# 🎨 Vyrale Brand Guide
+# 🎨 vyrale Brand Guide
 
-This guide outlines the visual identity elements for Vyrale.
+This guide outlines the visual identity elements for vyrale.
 
 ---
 
 ## ⚡ Logo
 
-Our logo consists of the Vyrale wordmark and the lightning bolt icon.
+Our logo consists of the vyrale wordmark and the lightning bolt icon.
 
 **Primary Logo:**
 
@@ -30,7 +30,7 @@ Our logo consists of the Vyrale wordmark and the lightning bolt icon.
 
 **Primary Color:**
 
-- **Vyrale Pink:** `#FF2E7D` (Used for primary branding, calls-to-action, highlights)
+- **vyrale Pink:** `#FF2E7D` (Used for primary branding, calls-to-action, highlights)
 
 **Neutral Colors:**
 
@@ -44,17 +44,17 @@ Our logo consists of the Vyrale wordmark and the lightning bolt icon.
 
 ## 🖋️ Typography
 
-_(To be defined - Specify primary and secondary fonts for headings and body text. Consider open-source options like Inter, Poppins, or Lexend.)_
-
-**Primary Font:** [Font Name] (e.g., Poppins)
+**Primary Font:** Raleway
 
 - Used for: Headings (H1, H2, H3)
-- Weights: Bold, SemiBold
+- Weights: Bold (700), SemiBold (600)
+- Source: [Google Fonts](https://fonts.google.com/specimen/Raleway)
 
-**Secondary Font:** [Font Name] (e.g., Inter)
+**Secondary Font:** Inter
 
 - Used for: Body text, UI elements, captions
-- Weights: Regular, Medium
+- Weights: Regular (400), Medium (500)
+- Source: [Google Fonts](https://fonts.google.com/specimen/Inter)
 
 ---
 

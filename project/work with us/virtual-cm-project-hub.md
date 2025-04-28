@@ -48,13 +48,13 @@ Built to be **scalable and international**, Virtual CM helps users **create**, *
 
 ## 📚 Project Sections
 
-| Section                                                 | Description                                                             |
-| :------------------------------------------------------ | :---------------------------------------------------------------------- |
-| 🚀 [Roadmap & Milestones](roadmap-milestones.md)        | Step-by-step project timeline: Pre-Hackathon, Hackathon, Post-Hackathon |
-| 🛠 [Technical Documentation](technical-documentation.md) | Tech stack, APIs, Git flow, Dev best practices                          |
-| 🎨 [Design System](design-system.md)                    | Color palette, fonts, components (TailwindCSS + Shadcn/UI)              |
-| 📦 [Assets Library](#)                                  | Logos, favicons, images (to be organized)                               |
-| 📜 [Changelog](changelog.md)                            | Track major updates and decisions over time                             |
+| Section                                                                                                   | Description                                                             |
+| :-------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------- |
+| 🚀 [Roadmap & Milestones](roadmap-milestones.md)                                                          | Step-by-step project timeline: Pre-Hackathon, Hackathon, Post-Hackathon |
+| 🛠 [Technical Documentation](technical-documentation.md)                                                   | Tech stack, APIs, Git flow, Dev best practices                          |
+| 🎨 [Design System](design-system.md)                                                                      | Color palette, fonts, components (TailwindCSS + Shadcn/UI)              |
+| 📦 [Assets Library](https://drive.google.com/drive/folders/1XNN6XuIEuhyWMjpdMP_xjOXC5d6_Uxtv?usp=sharing) | Logos, favicons, images (organized on Google Drive)                     |
+| 📜 [Changelog](changelog.md)                                                                              | Track major updates and decisions over time                             |
 
 ---
 
