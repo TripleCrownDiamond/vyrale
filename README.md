@@ -26,4 +26,4 @@ Virtual Community Manager (Virtual CM) is a next-generation AI-powered platform 
 - Crypto (USDC, MATIC)
 - International Payment Gateways
 
-[For Developers & Contributors →](project/work%20with%20us/virtual-cm-project-hub.md)
+[Developers & Contributors (Work With Us) →](project/work%20with%20us/virtual-cm-project-hub.md)

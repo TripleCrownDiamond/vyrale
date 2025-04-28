@@ -1,4 +1,5 @@
 # 🧙 Virtual CM – Project Hub (For Developers)
+
 ---
 
 ## 🌟 Project Overview
@@ -47,27 +48,27 @@ Built to be **scalable and international**, Virtual CM helps users **create**, *
 
 ## 📚 Project Sections
 
-| Section | Description |
-|:---|:---|
-| 🚀 [Roadmap & Milestones](roadmap-milestones.md) | Step-by-step project timeline: Pre-Hackathon, Hackathon, Post-Hackathon |
-| 🛠 [Technical Documentation](technical-documentation.md) | Tech stack, APIs, Git flow, Dev best practices |
-| 🎨 [Design System](design-system.md) | Color palette, fonts, components (TailwindCSS + Shadcn/UI) |
-| 📦 [Assets Library](#) | Logos, favicons, images (to be organized) |
-| 📜 [Changelog](changelog.md) | Track major updates and decisions over time |
+| Section                                                 | Description                                                             |
+| :------------------------------------------------------ | :---------------------------------------------------------------------- |
+| 🚀 [Roadmap & Milestones](roadmap-milestones.md)        | Step-by-step project timeline: Pre-Hackathon, Hackathon, Post-Hackathon |
+| 🛠 [Technical Documentation](technical-documentation.md) | Tech stack, APIs, Git flow, Dev best practices                          |
+| 🎨 [Design System](design-system.md)                    | Color palette, fonts, components (TailwindCSS + Shadcn/UI)              |
+| 📦 [Assets Library](#)                                  | Logos, favicons, images (to be organized)                               |
+| 📜 [Changelog](changelog.md)                            | Track major updates and decisions over time                             |
 
 ---
 
 ## 🧱 Architecture Overview
 
-| Layer | Technology |
-|:---|:---|
-| Frontend | Next.js 14 + TailwindCSS + Shadcn/UI |
-| Backend | Supabase |
-| Authentication | Clerk.dev |
-| AI | Open Source Models (LLaMA, Mistral, Dolphin) + OpenAI fallback |
-| Automation | n8n.io + Trae AI IDE |
-| Payments | Flutterwave, KKiaPay, Qosic, Crypto (Polygon USDC, MATIC) |
-| Deployment | Vercel |
+| Layer          | Technology                                                     |
+| :------------- | :------------------------------------------------------------- |
+| Frontend       | Next.js 14 + TailwindCSS + Shadcn/UI                           |
+| Backend        | Supabase                                                       |
+| Authentication | Clerk.dev                                                      |
+| AI             | Open Source Models (LLaMA, Mistral, Dolphin) + OpenAI fallback |
+| Automation     | n8n.io + Trae AI IDE                                           |
+| Payments       | Flutterwave, KKiaPay, Qosic, Crypto (Polygon USDC, MATIC)      |
+| Deployment     | Vercel                                                         |
 
 ---
 
@@ -84,6 +85,7 @@ Built to be **scalable and international**, Virtual CM helps users **create**, *
 - **Clear Commit Messages** (conventional commits)
 
 Example:
+
 ```bash
 feat: Add profile management flow
 fix: Resolve authentication redirection bug
@@ -92,7 +94,7 @@ docs: Add API setup instructions
 ```
 
 - **Daily Standup**: Short syncs (15 min)
-- **Discord / WhatsApp Communication**
+- **Discord / WhatsApp Communication**: Join our [WhatsApp Group For Devs & Contributors](https://chat.whatsapp.com/JpuHc9PG84FA0ijPxuwGzB) for quick updates and discussions. (Discord link TBD)
 
 ---
 

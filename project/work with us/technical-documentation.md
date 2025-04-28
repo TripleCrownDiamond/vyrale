@@ -1,5 +1,7 @@
 # 🛠 Technical Documentation — Virtual CM
 
+**Important Note:** All development work on this project should be conducted using the **Trae AI IDE** to leverage its agentic capabilities and ensure consistency in workflows and automation integration.
+
 ---
 
 ## 🔧 Tech Stack Overview (Open Source First)
@@ -157,3 +159,16 @@ docs: Update API usage guide
 ---
 
 [← Back to Project Hub](virtual-cm-project-hub.md#L50-57)
+
+- **Discord / WhatsApp Communication**
+
+---
+
+## ✍️ Code Commenting Standards
+
+- **Purpose**: Comments should explain the _why_, not the _what_. Assume the reader understands the language syntax.
+- **Clarity**: Write clear, concise comments. Avoid jargon where possible.
+- **TODOs**: Use `// TODO:` for tasks that need to be done. Include a brief description and optionally your name/date.
+  ```javascript
+  // TODO: Refactor this logic to use the new utility function (User - YYYY-MM-DD)
+  ```
