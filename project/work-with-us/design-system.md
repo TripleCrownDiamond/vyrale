@@ -227,4 +227,47 @@ We primarily use components from the [Shadcn/UI](https://ui.shadcn.com/) library
 
 ---
 
+## 📐 Figma Design System Guide
+
+To ensure consistency between design and development, create a corresponding Figma library based on this design system document.
+
+**Key Steps:**
+
+1.  **Color Styles:**
+
+    - Create Figma color styles for all colors defined in the [Color Palette](#1-color-palette) section.
+    - Use the exact HEX codes provided.
+    - Name the styles clearly, mirroring the Tailwind variable names (e.g., `primary`, `accent`, `gray-light`, `success`).
+
+2.  **Text Styles:**
+
+    - Create Figma text styles based on the [Typography](#2-typography) guidelines.
+    - Set up styles for different heading levels (H1-H6) using Raleway with the specified weights.
+    - Set up styles for body text using Inter with the specified weights.
+    - Ensure line heights and other typographic properties are consistent.
+
+3.  **Component Library:**
+
+    - Recreate the core [Shadcn/UI Components](#-components-shadcnui) used in the project as Figma components.
+    - Focus on components like `Button`, `Input`, `Card`, `Dialog`, `Badge`, etc.
+    - Apply the defined Color Styles and Text Styles to these components.
+    - Build variants for components where necessary (e.g., button states: default, hover, disabled; button types: primary, secondary, destructive).
+
+4.  **Iconography:**
+
+    - Import the chosen icon set (e.g., Lucide Icons) into Figma.
+    - Create icon components for easy reuse.
+
+5.  **Spacing & Layout:**
+
+    - While Figma doesn't have direct Tailwind spacing utilities, establish a consistent spacing system in Figma (e.g., using an 8px grid or multiples of 4px) that mirrors the Tailwind scale used in development.
+    - Use Auto Layout extensively to manage spacing within components and layouts.
+
+6.  **Documentation:**
+    - Add descriptions and usage guidelines directly within the Figma library for clarity.
+
+By mirroring the web design system in Figma, we facilitate a smoother handoff process and maintain visual consistency across design and implementation.
+
+---
+
 [← Back to Project Hub](virtual-cm-project-hub.md)
