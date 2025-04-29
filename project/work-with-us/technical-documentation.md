@@ -1,10 +1,10 @@
-# 🛠 Technical Documentation — Virtual CM
+# 🛠 Technical Documentation — ⚡vyrale
 
 **Important Note:** All development work on this project should be conducted using the **Trae AI IDE** to leverage its agentic capabilities and ensure consistency in workflows and automation integration.
 
 ---
 
-## 🔧 Tech Stack Overview (Open Source First)
+## 🔧 Tech Stack Overview (Leveraging Open Source)
 
 | Layer                     | Technology                                                                                                    |
 | :------------------------ | :------------------------------------------------------------------------------------------------------------ |
@@ -18,7 +18,8 @@
 
 **Note:**
 
-- All technologies are selected with a **free-tier/open-source first** logic.
+- Technologies are selected prioritizing robust **open-source** components and free tiers where practical.
+- **Important:** While the underlying stack leverages open-source software, the final **⚡vyrale application itself is a commercial product and will not be open-source or free.**
 - Future migrations toward more independent, scalable hosting are anticipated.
 
 ---

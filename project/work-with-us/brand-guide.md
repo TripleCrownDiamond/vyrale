@@ -1,12 +1,12 @@
-# 🎨 vyrale Brand Guide
+# 🎨 ⚡vyrale Brand Guide
 
-This guide outlines the visual identity elements for vyrale.
+This guide outlines the visual identity elements for ⚡vyrale.
 
 ---
 
 ## ⚡ Logo
 
-Our logo consists of the vyrale wordmark and the lightning bolt icon.
+Our logo consists of the ⚡vyrale wordmark and the lightning bolt icon.
 
 **Primary Logo:**
 
@@ -30,7 +30,7 @@ Our logo consists of the vyrale wordmark and the lightning bolt icon.
 
 **Primary Color:**
 
-- **vyrale Pink:** `#FF2E7D` (Used for primary branding, calls-to-action, highlights)
+- **⚡vyrale Pink:** `#FF2E7D` (Used for primary branding, calls-to-action, highlights)
 
 **Neutral Colors:**
 
@@ -40,7 +40,7 @@ Our logo consists of the vyrale wordmark and the lightning bolt icon.
 
 **Accent Color:**
 
-- **vyrale Blue:** `#007BFF` (Used for secondary actions, informational highlights)
+- **⚡vyrale Blue:** `#007BFF` (Used for secondary actions, informational highlights)
 
 **Interaction Shades:**
 

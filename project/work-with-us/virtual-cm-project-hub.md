@@ -1,10 +1,10 @@
-# 🧙 Virtual CM – Project Hub (For Developers)
+# 🧙 ⚡vyrale – Project Hub (For Developers)
 
 ---
 
 ## 🌟 Project Overview
 
-**Virtual Community Manager (Virtual CM)** is a next-generation AI-powered SaaS platform that automates and optimizes social media management for:
+**⚡vyrale** is a next-generation AI-powered SaaS platform that automates and optimizes social media management for:
 
 - Small and Medium-Sized Businesses (SMBs)
 - Entrepreneurs
@@ -13,7 +13,7 @@
 - NGOs
 - Community Projects
 
-Built to be **scalable and international**, Virtual CM helps users **create**, **schedule**, **publish**, and **interact** on social media automatically, using powerful AI and workflow automations.
+Built to be **scalable and international**, ⚡vyrale helps users **create**, **schedule**, **publish**, and **interact** on social media automatically, using powerful AI and workflow automations.
 
 ---
 
@@ -33,7 +33,7 @@ Built to be **scalable and international**, Virtual CM helps users **create**, *
 - Support **multiple social media platforms** (Facebook, Instagram, LinkedIn, TikTok, X (Twitter), WhatsApp, etc.).
 - Accept **diverse payment methods**: Mobile Money (Africa), Card Payments, Crypto (Polygon/Matic, USDC), international gateways.
 - Offer **multilingual support**: English, French, Spanish, Portuguese, etc.
-- Stay **open-source friendly**, modular, and cost-efficient.
+- Build upon a modular, cost-efficient stack leveraging open-source components (Note: the final ⚡vyrale application is commercial).
 
 ---
 
@@ -50,9 +50,9 @@ Built to be **scalable and international**, Virtual CM helps users **create**, *
 
 | Section                                                                                                   | Description                                                             |
 | :-------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------- |
-| 🚀 [Roadmap & Milestones](roadmap-milestones.md)                                                          | Step-by-step project timeline: Pre-Hackathon, Hackathon, Post-Hackathon |
-| 🛠 [Technical Documentation](technical-documentation.md)                                                   | Tech stack, APIs, Git flow, Dev best practices                          |
-| 🎨 [Design System](design-system.md)                                                                      | Color palette, fonts, components (TailwindCSS + Shadcn/UI)              |
+| 🚀 [⚡vyrale Roadmap & Milestones](roadmap-milestones.md)                                                 | Step-by-step project timeline: Pre-Hackathon, Hackathon, Post-Hackathon |
+| 🛠 [⚡vyrale Technical Documentation](technical-documentation.md)                                          | Tech stack, APIs, Git flow, Dev best practices                          |
+| 🎨 [⚡vyrale Design System](design-system.md)                                                             | Color palette, fonts, components (TailwindCSS + Shadcn/UI)              |
 | 📦 [Assets Library](https://drive.google.com/drive/folders/1XNN6XuIEuhyWMjpdMP_xjOXC5d6_Uxtv?usp=sharing) | Logos, favicons, images (organized on Google Drive)                     |
 | 📜 [Changelog](changelog.md)                                                                              | Track major updates and decisions over time                             |
 

@@ -1,10 +1,10 @@
-# 🚀 Roadmap & Milestones — Virtual CM
+# 🚀 Roadmap & Milestones — ⚡vyrale
 
 ---
 
 ## 🌟 General Objective
 
-Deliver a functional and scalable MVP for **Virtual CM**, ready for Hackathon presentation and post-hackathon expansion as a real SaaS product.
+Deliver a functional and scalable MVP for **⚡vyrale**, ready for Hackathon presentation and post-hackathon expansion as a real SaaS product.
 
 ---
 

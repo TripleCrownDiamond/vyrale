@@ -1,6 +1,6 @@
-# 🎨 vyrale Design System
+# 🎨 ⚡vyrale Design System
 
-This document outlines the core components, styles, and guidelines for building interfaces for vyrale, ensuring consistency and leveraging our tech stack.
+This document outlines the core components, styles, and guidelines for building interfaces for ⚡vyrale, ensuring consistency and leveraging our tech stack.
 
 Built With: Next.js 14, TailwindCSS, Shadcn/UI
 
@@ -10,7 +10,7 @@ Built With: Next.js 14, TailwindCSS, Shadcn/UI
 
 ### 1. Color Palette
 
-Our color palette is designed to be vibrant, accessible, and aligned with the vyrale brand identity. Refer to the [vyrale Brand Guide](brand-guide.md) for the full official palette.
+Our color palette is designed to be vibrant, accessible, and aligned with the ⚡vyrale brand identity. Refer to the [⚡vyrale Brand Guide](brand-guide.md) for the full official palette.
 
 **Core Colors:**
 
