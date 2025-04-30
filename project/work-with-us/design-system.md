@@ -270,4 +270,4 @@ By mirroring the web design system in Figma, we facilitate a smoother handoff pr
 
 ---
 
-[← Back to Project Hub](virtual-cm-project-hub.md)
+[← Retour au Hub du Projet](vyrale.md)

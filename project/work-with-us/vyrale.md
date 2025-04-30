@@ -53,6 +53,7 @@ Built to be **scalable and international**, ⚡vyrale helps users **create**, **
 | 🚀 [⚡vyrale Roadmap & Milestones](roadmap-milestones.md)                                                 | Step-by-step project timeline: Pre-Hackathon, Hackathon, Post-Hackathon |
 | 🛠 [⚡vyrale Technical Documentation](technical-documentation.md)                                          | Tech stack, APIs, Git flow, Dev best practices                          |
 | 🎨 [⚡vyrale Design System](design-system.md)                                                             | Color palette, fonts, components (TailwindCSS + Shadcn/UI)              |
+| 📊 [⚡vyrale Suivi de Progression](progress-tracker.md)                                                   | Suivi détaillé de l'avancement des tâches de la feuille de route        |
 | 📦 [Assets Library](https://drive.google.com/drive/folders/1XNN6XuIEuhyWMjpdMP_xjOXC5d6_Uxtv?usp=sharing) | Logos, favicons, images (organized on Google Drive)                     |
 | 📜 [Changelog](changelog.md)                                                                              | Track major updates and decisions over time                             |
 
@@ -72,30 +73,6 @@ Built to be **scalable and international**, ⚡vyrale helps users **create**, **
 
 ---
 
-## 🛠 Developer Guidelines
-
-- **Code Quality**: Clean, modular, documented
-- **Open Source Preference**: Always prioritize open, cost-effective models and libraries
-- **Git Workflow**:
-  - `main` = stable production
-  - `develop` = integration of features
-  - `feature/*` = feature branches
-  - `bugfix/*` = bugfix branches
-- **PRs Mandatory**: No direct commit to `main` or `develop`
-- **Clear Commit Messages** (conventional commits)
-
-Example:
-
-```bash
-feat: Add profile management flow
-fix: Resolve authentication redirection bug
-chore: Update Tailwind config
-docs: Add API setup instructions
-```
-
-- **Daily Standup**: Short syncs (15 min)
-- **Discord / WhatsApp Communication**: Join our [WhatsApp Group For Devs & Contributors](https://chat.whatsapp.com/JpuHc9PG84FA0ijPxuwGzB) for quick updates and discussions. (Discord link TBD)
-
 ---
 
 ## 📅 Hackathon Strategy
@@ -113,6 +90,6 @@ docs: Add API setup instructions
 
 ---
 
-# ✅ End of Virtual CM – Project Hub page
+# ✅ End of ⚡vyrale – Project Hub page
 
 ---

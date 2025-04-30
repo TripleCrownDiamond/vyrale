@@ -26,7 +26,7 @@
 - Crypto (USDC, MATIC)
 - International Payment Gateways
 
-[Developers & Contributors (Work With Us) →](project/work-with-us/virtual-cm-project-hub.md)
+[Developers & Contributors (Work With Us) →](project/work-with-us/vyrale.md)
 
 ## 🌍 Alignment with UN Sustainable Development Goals (SDGs)
 

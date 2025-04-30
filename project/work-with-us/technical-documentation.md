@@ -111,6 +111,13 @@
 
 ---
 
+## ✍️ Developer Principles
+
+- **Code Quality**: Clean, modular, documented
+- **Open Source Preference**: Always prioritize open, cost-effective models and libraries
+
+---
+
 ## 📚 Git Workflow Standards
 
 | Type        | Branch naming          |
@@ -172,4 +179,4 @@ docs: Update API usage guide
 
 ---
 
-[← Back to Project Hub](virtual-cm-project-hub.md#L50-57)
+[← Back to Project Hub](vyrale.md)

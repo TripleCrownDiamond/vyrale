@@ -6,6 +6,8 @@
 
 Deliver a functional and scalable MVP for **⚡vyrale**, ready for Hackathon presentation and post-hackathon expansion as a real SaaS product.
 
+➡️ **See the [Detailed Progress Tracker](progress-tracker.md)**
+
 ---
 
 ## 📅 Project Timeline Overview
@@ -39,6 +41,9 @@ Deliver a functional and scalable MVP for **⚡vyrale**, ready for Hackathon pre
 
 ### Phase 1: Pre-Hackathon (Now ➔ Hackathon Start)
 
+- [x] Define initial brand identity (logo variations, color palette, typography)
+- [x] Design initial UI/UX flow (wireframes, mockups)
+- [x] Setup development environment (IDE, version control)
 - [x] Setup GitHub repository and branch structure
 - [x] Initialize Next.js 14 + TailwindCSS + Shadcn/UI
 - [x] Integrate Supabase (Database, Storage, Auth)
@@ -47,7 +52,6 @@ Deliver a functional and scalable MVP for **⚡vyrale**, ready for Hackathon pre
 - [x] Build basic pages: Login, Dashboard, Profile CRUD
 - [x] Start Open Source AI model testing (for text/image generation)
 - [x] Setup initial automations with n8n.io
-- [ ] Define initial brand identity (logo variations, color palette, typography)
 
 ### Phase 2: Hackathon (Hackathon Weekend)
 
@@ -120,4 +124,4 @@ Deliver a functional and scalable MVP for **⚡vyrale**, ready for Hackathon pre
 
 ---
 
-[← Back to Project Hub](virtual-cm-project-hub.md#L50-57)
+[← Retour au Hub du Projet](vyrale.md)
