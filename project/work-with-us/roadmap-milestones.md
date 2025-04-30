@@ -6,8 +6,6 @@
 
 Deliver a functional and scalable MVP for **⚡vyrale**, ready for Hackathon presentation and post-hackathon expansion as a real SaaS product.
 
-➡️ **See the [Detailed Progress Tracker](progress-tracker.md)**
-
 ---
 
 ## 📅 Project Timeline Overview
@@ -46,12 +44,14 @@ Deliver a functional and scalable MVP for **⚡vyrale**, ready for Hackathon pre
 - [x] Setup development environment (IDE, version control)
 - [x] Setup GitHub repository and branch structure
 - [x] Initialize Next.js 14 + TailwindCSS + Shadcn/UI
-- [x] Integrate Supabase (Database, Storage, Auth)
-- [x] Setup Clerk.dev authentication flow
-- [x] Prepare initial database schemas: users, profiles, posts, plans
-- [x] Build basic pages: Login, Dashboard, Profile CRUD
-- [x] Start Open Source AI model testing (for text/image generation)
-- [x] Setup initial automations with n8n.io
+- [ ] Setup Linting & Formatting (ESLint, Prettier)
+- [ ] Configure Environment Variables (.env)
+- [ ] Integrate Supabase (Database, Storage, Auth)
+- [ ] Setup Clerk.dev authentication flow
+- [ ] Prepare initial database schemas: users, profiles, posts, plans
+- [ ] Build basic pages: Login, Dashboard, Profile CRUD
+- [ ] Start Open Source AI model testing (for text/image generation)
+- [ ] Setup initial automations with n8n.io
 
 ### Phase 2: Hackathon (Hackathon Weekend)
 
