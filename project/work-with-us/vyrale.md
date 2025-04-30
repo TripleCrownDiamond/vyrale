@@ -48,14 +48,13 @@ Built to be **scalable and international**, ⚡vyrale helps users **create**, **
 
 ## 📚 Project Sections
 
-| Section                                                          | Description                                                             |
-| :--------------------------------------------------------------- | :---------------------------------------------------------------------- |
-| 🚀 [⚡vyrale Roadmap & Milestones](roadmap-milestones.md)        | Step-by-step project timeline: Pre-Hackathon, Hackathon, Post-Hackathon |
-| 🛠 [⚡vyrale Technical Documentation](technical-documentation.md) | Tech stack, APIs, Git flow, Dev best practices                          |
-| 🎨 [⚡vyrale Design System](design-system.md)                    | Color palette, fonts, components (TailwindCSS + Shadcn/UI)              |
-
-| 📦 [Assets Library](https://drive.google.com/drive/folders/1XNN6XuIEuhyWMjpdMP_xjOXC5d6_Uxtv?usp=sharing) | Logos, favicons, images (organized on Google Drive) |
-| 📜 [Changelog](changelog.md) | Track major updates and decisions over time |
+| Section                                                                                                   | Description                                                             |
+| :-------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------- |
+| 🚀 [⚡vyrale Roadmap & Milestones](roadmap-milestones.md)                                                 | Step-by-step project timeline: Pre-Hackathon, Hackathon, Post-Hackathon |
+| 🛠 [⚡vyrale Technical Documentation](technical-documentation.md)                                          | Tech stack, APIs, Git flow, Dev best practices                          |
+| 🎨 [⚡vyrale Design System](design-system.md)                                                             | Color palette, fonts, components (TailwindCSS + Shadcn/UI)              |
+| 📦 [Assets Library](https://drive.google.com/drive/folders/1XNN6XuIEuhyWMjpdMP_xjOXC5d6_Uxtv?usp=sharing) | Logos, favicons, images (organized on Google Drive)                     |
+| 📜 [Changelog](changelog.md)                                                                              | Track major updates and decisions over time                             |
 
 ---
 
