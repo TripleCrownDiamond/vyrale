@@ -41,8 +41,7 @@ Built to be **scalable and international**, ⚡vyrale helps users **create**, **
 
 ✅ Project base setup (Next.js 14 + TailwindCSS + Supabase + Clerk.dev)  
 ✅ AI Model research (Open Source prioritized — LLaMA, Mistral, Stable Diffusion)  
-✅ Automation platform integrated (n8n.io, Trae AI IDE)  
-✅ Hackathon registration (Trae AI IDE Hackathon June 2025)
+✅ Automation platform integrated (n8n.io, Trae AI IDE)
 
 ---
 

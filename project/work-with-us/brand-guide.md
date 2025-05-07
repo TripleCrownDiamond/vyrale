@@ -65,4 +65,4 @@ Our logo consists of the ⚡vyrale wordmark and the lightning bolt icon.
 
 ---
 
-[← Retour au Hub du Projet](vyrale.md)
+[← Back to Project Hub](vyrale.md)

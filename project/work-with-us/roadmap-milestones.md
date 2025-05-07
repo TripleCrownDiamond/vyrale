@@ -4,17 +4,16 @@
 
 ## 🌟 General Objective
 
-Deliver a functional and scalable MVP for **⚡vyrale**, ready for Hackathon presentation and post-hackathon expansion as a real SaaS product.
+Deliver a functional and scalable MVP for **⚡vyrale**, ready for expansion as a real SaaS product.
 
 ---
 
 ## 📅 Project Timeline Overview
 
-| Phase                    | Focus                            |
-| :----------------------- | :------------------------------- |
-| **Pre-Hackathon Phase**  | Setup technical foundations      |
-| **Hackathon Phase**      | Finalize MVP and submit demo     |
-| **Post-Hackathon Phase** | Continue development and scaling |
+| Phase                      | Focus                            |
+| :------------------------- | :------------------------------- |
+| **Initial Setup Phase**    | Setup technical foundations      |
+| **Continuous Development** | Feature implementation & scaling |
 
 ---
 
@@ -37,7 +36,7 @@ Deliver a functional and scalable MVP for **⚡vyrale**, ready for Hackathon pre
 
 ## 🛠 Detailed Roadmap
 
-### Phase 1: Pre-Hackathon (Now ➔ Hackathon Start)
+### Phase 1: Initial Setup
 
 - [x] Define initial brand identity (logo variations, color palette, typography)
 - [x] Design initial UI/UX flow (wireframes, mockups)
@@ -53,20 +52,7 @@ Deliver a functional and scalable MVP for **⚡vyrale**, ready for Hackathon pre
 - [ ] Start Open Source AI model testing (for text/image generation)
 - [ ] Setup initial automations with n8n.io
 
-### Phase 2: Hackathon (Hackathon Weekend)
-
-| Day                 | Milestone                                | Tasks                                                                |
-| :------------------ | :--------------------------------------- | :------------------------------------------------------------------- |
-| **Day 1 Morning**   | Final Setup Check                        | Verify environment, database, auth                                   |
-| **Day 1 Afternoon** | Profile Management                       | Complete CRUD for profiles (multi-type: business, artist, NGO, etc.) |
-| **Day 1 Evening**   | Editorial Plan Generator                 | Integrate AI prompt forms, link to profile data                      |
-| **Day 2 Morning**   | Post Creation + Visual Editor            | Build UI for post creation (upload logo, font, color, preview)       |
-| **Day 2 Afternoon** | Scheduler + Social Media API Integration | Setup Supabase CRON, connect Meta Graph API (Facebook/Instagram)     |
-| **Day 2 Evening**   | Payment System Integration               | Connect Flutterwave, KKiaPay, Crypto payments                        |
-| **Day 3 Morning**   | Final Dashboard + QA                     | Build dashboard overview, bugfix critical paths                      |
-| **Day 3 Afternoon** | Deployment & Submission                  | Deploy to Vercel, test live app, submit to hackathon                 |
-
-### Phase 3: Post-Hackathon (June ➔ Ongoing)
+### Phase 2: Continuous Development (Ongoing)
 
 - [ ] Add multi-account management (agencies, teams)
 - [ ] Integrate more social media platforms (LinkedIn, TikTok, X)
@@ -104,7 +90,6 @@ Deliver a functional and scalable MVP for **⚡vyrale**, ready for Hackathon pre
 
 ## 🚀 Future Strategic Goals & Growth
 
-- Participate in additional relevant Hackathons and startup competitions.
 - Explore seed funding rounds or grants to accelerate growth.
 - Expand service offerings based on user feedback and market demand.
 - Develop strategic alliances within the tech and creative industries.
@@ -113,10 +98,9 @@ Deliver a functional and scalable MVP for **⚡vyrale**, ready for Hackathon pre
 
 ## 🌟 Success Criteria
 
-- Working and deployed MVP by Hackathon weekend
+- Functional and scalable MVP
 - Clean, bug-free user experience
-- Submission with live demo URL and GitHub repo ready
-- Smooth handover for post-hackathon growth
+- Robust foundation for continuous development and scaling
 
 ---
 
@@ -124,4 +108,4 @@ Deliver a functional and scalable MVP for **⚡vyrale**, ready for Hackathon pre
 
 ---
 
-[← Retour au Hub du Projet](vyrale.md)
+[← Back to Project Hub](vyrale.md)
