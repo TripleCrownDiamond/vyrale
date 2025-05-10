@@ -4,23 +4,1817 @@
 
 ---
 
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
 ## 🔧 Tech Stack Overview (Leveraging Open Source)
 
-| Layer                     | Technology                                                                                                    |
-| :------------------------ | :------------------------------------------------------------------------------------------------------------ |
-| **Frontend**              | Next.js 14 + TailwindCSS + Shadcn/UI                                                                          |
-| **Backend**               | Supabase (Database, API, Auth, Storage)                                                                       |
-| **Authentication**        | Clerk.dev initially ➔ plan to migrate to an Open Source alternative (e.g., Lucia, NextAuth.js, Supabase Auth) |
-| **AI Content Generation** | Open Source LLMs (LLaMA, Mistral, Dolphin, etc.) + optional fallback to OpenAI                                |
-| **Automation**            | n8n.io + Trae AI IDE agents and flows                                                                         |
-| **Payments**              | Flutterwave, KKiaPay, Qosic, Crypto (Polygon/Matic/USDC)                                                      |
-| **Deployment**            | Vercel (could migrate to Railway or self-hosted if necessary)                                                 |
+| Layer | Technology |
+| :---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+--- | :---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+--- |
+| **Frontend** | Next.js 14 + TailwindCSS + Shadcn/UI |
+| **Backend** | Supabase (Database, API, Auth, Storage) |
+| **Authentication** | Clerk.dev initially ➔ plan to migrate to an Open Source alternative (e.g., Lucia, NextAuth.js, Supabase Auth) |
+| **AI Content Generation** | Open Source LLMs (LLaMA, Mistral, Dolphin, etc.) + optional fallback to OpenAI |
+| **Automation** | n8n.io + Trae AI IDE agents and flows |
+| **Payments** | Flutterwave, KKiaPay, Qosic, Crypto (Polygon/Matic/USDC) |
+| **Deployment** | Vercel (could migrate to Railway or self-hosted if necessary) |
 
 **Note:**
 
 - Technologies are selected prioritizing robust **open-source** components and free tiers where practical.
 - **Important:** While the underlying stack leverages open-source software, the final **⚡vyrale application itself is a commercial product and will not be open-source or free.**
 - Future migrations toward more independent, scalable hosting are anticipated.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
 
 ---
 
@@ -48,6 +1842,45 @@
 
 ---
 
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
 ## 📥 Backend & Database
 
 - **Database**: PostgreSQL (managed by Supabase)
@@ -66,13 +1899,1027 @@
 
 ---
 
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
 ## 🧠 AI Integration
 
-| Task             | Technology                                                    |
-| :--------------- | :------------------------------------------------------------ |
-| Text generation  | Open Source LLMs (LLaMA 3, Mistral 7B, Dolphin, etc.)         |
+| Task | Technology |
+| :---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+--- | :---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+--- |
+| Text generation | Open Source LLMs (LLaMA 3, Mistral 7B, Dolphin, etc.) |
 | Image generation | Stable Diffusion (SDXL, 1.5) via HuggingFace or Replicate API |
-| Automation       | n8n.io workflows, Trae AI IDE agents                          |
+| Automation | n8n.io workflows, Trae AI IDE agents |
 
 **Strategy:**
 
@@ -90,6 +2937,45 @@
 
 ---
 
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
 ## 🌐 Social Media API Integrations
 
 - **Meta Graph API**: Facebook Pages + Instagram Business posting
@@ -98,16 +2984,679 @@
 
 ---
 
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
 ## 💳 Payments System
 
-| Provider    | Purpose                               |
-| :---------- | :------------------------------------ |
-| Flutterwave | Card and Mobile Money payments        |
-| KKiaPay     | Alternative Mobile Money platform     |
-| Qosic Pay   | Micro-transactions and Mobile Money   |
-| Crypto      | Accept MATIC, USDC on Polygon network |
+| Provider | Purpose |
+| :---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---- | :---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+--- |
+| Flutterwave | Card and Mobile Money payments |
+| KKiaPay | Alternative Mobile Money platform |
+| Qosic Pay | Micro-transactions and Mobile Money |
+| Crypto | Accept MATIC, USDC on Polygon network |
 
 **Future proof**: Modular payment provider integration (easily switch or add new providers)
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
 
 ---
 
@@ -118,14 +3667,443 @@
 
 ---
 
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
 ## 📚 Git Workflow Standards
 
-| Type        | Branch naming          |
-| :---------- | :--------------------- |
-| Production  | `main`                 |
-| Development | `develop`              |
-| Features    | `feature/feature-name` |
-| Bugfixes    | `bugfix/bug-name`      |
+| Type | Branch naming |
+| :---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---- | :---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+--- |
+| Production | `main` |
+| Development | `develop` |
+| Features | `feature/feature-name` |
+| Bugfixes | `bugfix/bug-name` |
 
 **Commit Message Format (Conventional Commits)**:
 
@@ -144,11 +4122,89 @@ docs: Update API usage guide
 
 ---
 
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
 ## 🛠 CI/CD and Deployment
 
 - **Platform**: Vercel (default for fast deployment)
 - **Branch Deploys**: Preview deployments on all PRs
 - **Production Deploy**: Triggered from `main` branch merge
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
 
 ---
 
@@ -162,7 +4218,85 @@ docs: Update API usage guide
 
 ---
 
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
+
+---
+
 - **Discord / WhatsApp Communication**
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
 
 ---
 
@@ -176,6 +4310,45 @@ docs: Update API usage guide
   ```
 
 # ✅ End of Technical Documentation
+
+---
+
+## 🐛 Troubleshooting / Common Issues
+
+### NPM ERESOLVE Error with `react-day-picker`
+
+**Symptom:**
+
+When running `npm install`, you might encounter an `ERESOLVE` error similar to the following:
+
+```bash
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: react-day-picker@8.10.1
+npm error Found: react@19.1.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+...
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+npm error node_modules/react-day-picker
+npm error   react-day-picker@"^8.10.1" from the root project
+```
+
+**Cause:**
+
+This error occurs because `react-day-picker@8.10.1` has a peer dependency on an older version of React (e.g., `^16.8.0 || ^17.0.0 || ^18.0.0`), while the project is using a newer version (e.g., `react@19.1.0` as specified in `package.json`).
+
+**Solution:**
+
+To bypass this peer dependency conflict, you can use the `--legacy-peer-deps` flag with npm install:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This command tells npm to ignore peer dependencies and proceed with the installation. While this can resolve the immediate issue, be aware that it might lead to unexpected behavior if the installed package is truly incompatible with the newer version of its peer dependency. It's generally recommended to look for updated versions of packages that are compatible with your project's dependencies.
 
 ---
 

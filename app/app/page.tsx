@@ -1,48 +1,25 @@
-import Image from "next/image";
-
-// Keep only the second 'Home' function definition (starting around line 109)
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-background text-foreground">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        {/* You can add header content here if needed */}
+        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-border bg-background/80 pb-6 pt-8 backdrop-blur-2xl lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-card lg:p-4">
+          Get started by editing&nbsp;
+          <code className="font-mono font-bold text-primary">app/page.tsx</code>
+        </p>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center ">
-         {/* Replace with your actual logo/branding later */}
-         <h1 className="text-4xl font-heading font-bold text-primary">
-           ⚡vyrale
-         </h1>
-      </div>
-
-      <div className="mt-16 mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        {/* Example content cards */}
-        <a
-          href="#" // Replace with actual links
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold font-heading">
-            Dashboard{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Access your main workspace.
-          </p>
-        </a>
-
-        {/* Add more content sections or components here */}
-        {/* Example using Shadcn Button (uncomment import and run add command first) */}
-        {/*
-        <div className="mt-8">
-          <Button variant="default">Primary Action</Button>
-          <Button variant="secondary" className="ml-4">Secondary</Button>
-          <Button variant="destructive" className="ml-4">Delete</Button>
+      <div className="mt-12">
+        <h1 className="text-4xl font-bold font-heading text-primary">Welcome to ⚡vyrale</h1>
+        <p className="mt-4 text-lg text-muted-foreground">
+          This is a sample page styled with our new dark theme.
+        </p>
+        <div className="mt-8 flex gap-4">
+          <button className="px-6 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90">
+            Primary Button
+          </button>
+          <button className="px-6 py-2 bg-accent text-accent-foreground rounded-md hover:bg-accent/90">
+            Accent Button
+          </button>
         </div>
-        */}
-
       </div>
     </main>
   );

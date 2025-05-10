@@ -1,150 +1,91 @@
-@tailwind base;
-
-@custom-variant dark (&:is(.dark *));
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @layer base {
   :root {
-    /* Define colors using HSL values based on your design system */
-    /* Use an online converter (HEX to HSL) if needed */
-    /* Example: #FF2E7D -> 340 100% 59% */
-    /* Example: #007BFF -> 211 100% 50% */
-    /* Example: #CC2564 -> 340 67% 45% */
-    /* Example: #0056B3 -> 211 100% 35% */
-    /* Example: #DC3545 -> 354 70% 54% */
-    /* Example: #FFFFFF -> 0 0% 100% */
-    /* Example: #000000 -> 0 0% 0% */
+    /* Vyrale Brand Colors (HSL for Shadcn/UI compatibility, HEX for general use) */
+    --primary-hsl: 339 100% 59%; /* #FF2E7D */
+    --primary-darker-hsl: 339 67% 46%; /* #CC2564 */
+    --accent-hsl: 211 100% 50%; /* #007BFF */
+    --accent-darker-hsl: 211 100% 35%; /* #0056B3 */
 
-    /* Light Mode (Default - will be overridden by dark) */
-    --background: 0 0% 100%; /* White */
-    --foreground: 0 0% 3.9%; /* Near Black */
+    /* Converted HEX for convenience and non-Shadcn usage */
+    --vyrale-pink: #ff2e7d;
+    --vyrale-pink-darker: #cc2564;
+    --vyrale-blue: #007bff;
+    --vyrale-blue-darker: #0056b3;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
+    /* Dark Theme Neutrals */
+    --background-hsl: 0 0% 13%; /* #212121 - A common dark background */
+    --foreground-hsl: 0 0% 98%; /* #FAFAFA - Light text for dark background */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
+    --background: #212121; /* Dark background */
+    --foreground: #fafafa; /* Light text */
 
-    --primary: 340 100% 59%; /* Vyrale Pink */
-    --primary-foreground: 0 0% 100%; /* White */
-    --primary-darker: 340 67% 45%; /* Vyrale Pink Darker */
+    --card-hsl: 0 0% 17%; /* #2B2B2B */
+    --card-foreground-hsl: 0 0% 98%; /* #FAFAFA */
+    --card: #2b2b2b;
+    --card-foreground: #fafafa;
 
-    --secondary: 0 0% 96.1%; /* Default Shadcn Slate-ish */
-    --secondary-foreground: 0 0% 9%;
+    --popover-hsl: 0 0% 13%; /* #212121 */
+    --popover-foreground-hsl: 0 0% 98%; /* #FAFAFA */
+    --popover: #212121;
+    --popover-foreground: #fafafa;
 
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
+    --primary-foreground-hsl: 0 0% 98%; /* #FAFAFA - Text on primary */
+    --primary-foreground: #fafafa;
 
-    --accent: 211 100% 50%; /* Vyrale Blue */
-    --accent-foreground: 0 0% 100%; /* White */
-    --accent-darker: 211 100% 35%; /* Vyrale Blue Darker */
+    --secondary-hsl: 0 0% 20%; /* #333333 */
+    --secondary-foreground-hsl: 0 0% 98%; /* #FAFAFA */
+    --secondary: #333333;
+    --secondary-foreground: #fafafa;
 
-    --destructive: 354 70% 54%; /* Error Red */
-    --destructive-foreground: 0 0% 98%;
+    --accent-foreground-hsl: 0 0% 98%; /* #FAFAFA - Text on accent */
+    --accent-foreground: #fafafa;
 
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 340 100% 59%;
+    --destructive-hsl: 0 84% 60%; /* #FF4D4D - Example error color */
+    --destructive-foreground-hsl: 0 0% 98%; /* #FAFAFA */
+    --destructive: #ff4d4d;
+    --destructive-foreground: #fafafa;
 
-    --radius: 0.5rem;
+    --muted-hsl: 0 0% 20%; /* #333333 */
+    --muted-foreground-hsl: 0 0% 63%; /* #A0A0A0 - Subtler text */
+    --muted: #333333;
+    --muted-foreground: #a0a0a0;
 
-    --font-inter: "Inter", sans-serif;
+    --border-hsl: 0 0% 25%; /* #404040 */
+    --border: #404040;
+    --input-hsl: 0 0% 25%; /* #404040 */
+    --input: #404040;
+    --ring-hsl: 339 100% 59%; /* Vyrale Pink for focus rings */
+    --ring: #ff2e7d;
+
+    --radius: 0.5rem; /* Default border radius for Shadcn/UI */
+
+    /* Semantic Colors from Design System */
+    --success: #28a745;
+    --warning: #ffc107;
+    --error: #dc3545; /* Overlaps with destructive, can be the same */
+    --info: #17a2b8;
+
+    /* Typography */
     --font-raleway: "Raleway", sans-serif;
+    --font-inter: "Inter", sans-serif;
   }
 
-  .dark {
-    /* Dark Mode Overrides */
-    --background: 0 0% 3.9%; /* Near Black */
-    --foreground: 0 0% 98%; /* Near White */
-
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-
-    /* Keep primary the same, foreground might change if needed */
-    --primary: 340 100% 59%;
-    --primary-foreground: 0 0% 100%; /* Still White */
-    --primary-darker: 340 67% 45%;
-
-    --secondary: 0 0% 14.9%; /* Darker Slate-ish */
-    --secondary-foreground: 0 0% 98%;
-
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-
-    /* Keep accent the same, foreground might change if needed */
-    --accent: 211 100% 50%;
-    --accent-foreground: 0 0% 100%; /* Still White */
-    --accent-darker: 211 100% 35%;
-
-    /* Keep destructive the same, foreground might change if needed */
-    --destructive: 354 70% 54%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 340 100% 59%;
-  }
-
-  * {
-    /* Apply the border color using the CSS variable */
-    border-color: hsl(var(--border));
-  }
-  body {
-    /* Set background and text color directly using CSS variables */
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
-    /* Apply base font directly using the CSS variable */
-    font-family: var(--font-inter);
-  }
-  /* Apply heading font directly using the CSS variable */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-raleway);
-  }
-}
-
-:root {
-  --sidebar: hsl(0 0% 98%);
-  --sidebar-foreground: hsl(240 5.3% 26.1%);
-  --sidebar-primary: hsl(240 5.9% 10%);
-  --sidebar-primary-foreground: hsl(0 0% 98%);
-  --sidebar-accent: hsl(240 4.8% 95.9%);
-  --sidebar-accent-foreground: hsl(240 5.9% 10%);
-  --sidebar-border: hsl(220 13% 91%);
-  --sidebar-ring: hsl(217.2 91.2% 59.8%);
-}
-
-.dark {
-  --sidebar: hsl(240 5.9% 10%);
-  --sidebar-foreground: hsl(240 4.8% 95.9%);
-  --sidebar-primary: hsl(224.3 76.3% 48%);
-  --sidebar-primary-foreground: hsl(0 0% 100%);
-  --sidebar-accent: hsl(240 3.7% 15.9%);
-  --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
-  --sidebar-border: hsl(240 3.7% 15.9%);
-  --sidebar-ring: hsl(217.2 91.2% 59.8%);
-}
-
-@theme inline {
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-inter);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-raleway);
+    @apply font-heading;
   }
 }
-
