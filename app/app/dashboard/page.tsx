@@ -1,9 +1,10 @@
 // app/dashboard/page.tsx
-import { UserButton, auth } from "@clerk/nextjs";
+import { UserButton } from "@clerk/nextjs";
+import { auth } from "@clerk/nextjs/server";
 import Link from 'next/link';
 
-export default function DashboardPage() {
-  const { userId } = auth();
+export default async function DashboardPage() {
+  const { userId } = await auth();
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center p-24 bg-background text-foreground">
@@ -20,7 +21,7 @@ export default function DashboardPage() {
         Ceci est une page de base pour votre tableau de bord. Vous pouvez la personnaliser.
       </p>
       <Link href="/" className="text-primary hover:underline">
-        Retour à l'accueil
+        Retour à l&apos;accueil
       </Link>
     </div>
   );
