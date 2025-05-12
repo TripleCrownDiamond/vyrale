@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   :root {
@@ -68,24 +70,25 @@
     --info: #17a2b8;
 
     /* Typography */
-    --font-raleway: "Raleway", sans-serif;
-    --font-inter: "Inter", sans-serif;
+    /* --font-raleway and --font-inter are now provided by next/font in layout.tsx */
   }
 
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(var(--background-hsl));
+    color: hsl(var(--foreground-hsl));
     font-family: var(--font-inter);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+}
 
+@layer components {
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    font-family: var(--font-raleway);
     @apply font-heading;
   }
 }
