@@ -71,6 +71,8 @@
 
     /* Typography */
     /* --font-raleway and --font-inter are now provided by next/font in layout.tsx */
+
+    --font-raleway: 'Raleway', sans-serif;
   }
 
   body {
@@ -89,6 +91,6 @@
   h4,
   h5,
   h6 {
-    @apply font-heading;
+    font-family: var(--font-raleway);
   }
 }

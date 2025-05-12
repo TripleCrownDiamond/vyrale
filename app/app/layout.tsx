@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body className={`${inter.variable} ${raleway.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${raleway.variable} font-sans antialiased`} suppressHydrationWarning data-testim-main-word-scripts-loaded="true">
         {children}
       </body>
     </html>
