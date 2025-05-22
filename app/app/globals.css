@@ -4,93 +4,85 @@
 
 @layer base {
   :root {
-    /* Vyrale Brand Colors (HSL for Shadcn/UI compatibility, HEX for general use) */
-    --primary-hsl: 339 100% 59%; /* #FF2E7D */
-    --primary-darker-hsl: 339 67% 46%; /* #CC2564 */
-    --accent-hsl: 211 100% 50%; /* #007BFF */
-    --accent-darker-hsl: 211 100% 35%; /* #0056B3 */
-
-    /* Converted HEX for convenience and non-Shadcn usage */
-    --vyrale-pink: #ff2e7d;
-    --vyrale-pink-darker: #cc2564;
-    --vyrale-blue: #007bff;
-    --vyrale-blue-darker: #0056b3;
-
-    /* Dark Theme Neutrals */
-    --background-hsl: 0 0% 13%; /* #212121 - A common dark background */
-    --foreground-hsl: 0 0% 98%; /* #FAFAFA - Light text for dark background */
-
-    --background: #212121; /* Dark background */
-    --foreground: #fafafa; /* Light text */
-
-    --card-hsl: 0 0% 17%; /* #2B2B2B */
-    --card-foreground-hsl: 0 0% 98%; /* #FAFAFA */
-    --card: #2b2b2b;
-    --card-foreground: #fafafa;
-
-    --popover-hsl: 0 0% 13%; /* #212121 */
-    --popover-foreground-hsl: 0 0% 98%; /* #FAFAFA */
-    --popover: #212121;
-    --popover-foreground: #fafafa;
-
-    --primary-foreground-hsl: 0 0% 98%; /* #FAFAFA - Text on primary */
-    --primary-foreground: #fafafa;
-
-    --secondary-hsl: 0 0% 20%; /* #333333 */
-    --secondary-foreground-hsl: 0 0% 98%; /* #FAFAFA */
-    --secondary: #333333;
-    --secondary-foreground: #fafafa;
-
-    --accent-foreground-hsl: 0 0% 98%; /* #FAFAFA - Text on accent */
-    --accent-foreground: #fafafa;
-
-    --destructive-hsl: 0 84% 60%; /* #FF4D4D - Example error color */
-    --destructive-foreground-hsl: 0 0% 98%; /* #FAFAFA */
-    --destructive: #ff4d4d;
-    --destructive-foreground: #fafafa;
-
-    --muted-hsl: 0 0% 20%; /* #333333 */
-    --muted-foreground-hsl: 0 0% 63%; /* #A0A0A0 - Subtler text */
-    --muted: #333333;
-    --muted-foreground: #a0a0a0;
-
-    --border-hsl: 0 0% 25%; /* #404040 */
-    --border: #404040;
-    --input-hsl: 0 0% 25%; /* #404040 */
-    --input: #404040;
-    --ring-hsl: 339 100% 59%; /* Vyrale Pink for focus rings */
-    --ring: #ff2e7d;
-
-    --radius: 0.5rem; /* Default border radius for Shadcn/UI */
-
-    /* Semantic Colors from Design System */
-    --success: #28a745;
-    --warning: #ffc107;
-    --error: #dc3545; /* Overlaps with destructive, can be the same */
-    --info: #17a2b8;
-
-    /* Typography */
-    /* --font-raleway and --font-inter are now provided by next/font in layout.tsx */
-
-    --font-raleway: 'Raleway', sans-serif;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-darker: 221.2 83.2% 43.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-darker: 210 40% 86.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+    --gray-light: 210 40% 96.1%;
+    --gray-medium: 215 20% 65.1%;
+    --gray-dark: 222.2 84% 4.9%;
+    --success: 142.1 76.2% 36.3%;
+    --warning: 38 92% 50%;
+    --error: 0 84.2% 60.2%;
+    --info: 221.2 83.2% 53.3%;
   }
 
-  body {
-    background-color: hsl(var(--background-hsl));
-    color: hsl(var(--foreground-hsl));
-    font-family: var(--font-inter);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-darker: 217.2 91.2% 49.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-darker: 217.2 32.6% 27.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+    --gray-light: 217.2 32.6% 17.5%;
+    --gray-medium: 215 20% 65.1%;
+    --gray-dark: 210 40% 98%;
   }
 }
 
-@layer components {
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    font-family: var(--font-raleway);
+    @apply font-heading;
   }
+}
+
+.button-primary:hover {
+  background-color: hsl(var(--primary-darker));
+}
+.button-accent:hover {
+  background-color: hsl(var(--accent-darker));
 }

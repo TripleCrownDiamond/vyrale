@@ -39,7 +39,7 @@ const config = {
         ring: "hsl(var(--ring-hsl))",
         background: "hsl(var(--background-hsl))",
         foreground: "hsl(var(--foreground-hsl))",
-
+        'gray-medium': "hsl(var(--gray-medium-hsl))",
         primary: {
           DEFAULT: "hsl(var(--primary-hsl))",
           foreground: "hsl(var(--primary-foreground-hsl))",

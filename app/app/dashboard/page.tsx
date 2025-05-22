@@ -1,28 +1,39 @@
-// app/dashboard/page.tsx
-import { UserButton } from "@clerk/nextjs";
-import { auth } from "@clerk/nextjs/server";
-import Link from 'next/link';
+import type { Metadata } from "next"
+import { DashboardHeader } from "@/components/dashboard-header"
+import { DashboardCards } from "@/components/dashboard-cards"
+import { ContentCalendar } from "@/components/content-calendar"
+import { RecentActivity } from "@/components/recent-activity"
+import { SocialAccounts } from "@/components/social-accounts"
+import { PerformanceChart } from "@/components/performance-chart"
 
-export default async function DashboardPage() {
-  const { userId } = await auth();
+export const metadata: Metadata = {
+  title: "Dashboard | ⚡vyrale",
+  description: "Manage your social media presence with ⚡vyrale",
+}
 
+export default function DashboardPage() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center p-24 bg-background text-foreground">
-      <header className="absolute top-0 right-0 p-8">
-        <UserButton afterSignOutUrl="/" />
-      </header>
-      <h1 className="text-4xl font-heading font-bold text-primary mb-8">
-        Tableau de Bord
-      </h1>
-      <p className="text-lg mb-4">
-        Bienvenue sur votre tableau de bord, {userId ? `utilisateur ${userId}` : "invité"}!
-      </p>
-      <p className="mb-8">
-        Ceci est une page de base pour votre tableau de bord. Vous pouvez la personnaliser.
-      </p>
-      <Link href="/" className="text-primary hover:underline">
-        Retour à l&apos;accueil
-      </Link>
+    <div className="space-y-8">
+      <DashboardHeader />
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <DashboardCards />
+      </div>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-7">
+        <div className="lg:col-span-4">
+          <PerformanceChart />
+        </div>
+        <div className="lg:col-span-3">
+          <SocialAccounts />
+        </div>
+      </div>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-7">
+        <div className="lg:col-span-4">
+          <ContentCalendar />
+        </div>
+        <div className="lg:col-span-3">
+          <RecentActivity />
+        </div>
+      </div>
     </div>
-  );
+  )
 }

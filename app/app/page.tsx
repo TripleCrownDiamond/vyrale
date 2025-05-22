@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-background text-foreground">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-border bg-background/80 pb-6 pt-8 backdrop-blur-2xl lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-card lg:p-4">
+        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-[hsl(var(--gray-medium))] bg-background/80 pb-6 pt-8 backdrop-blur-2xl lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-card lg:p-4">
           Get started by editing&nbsp;
           <code className="font-mono font-bold text-primary">app/page.tsx</code>
         </p>
